@@ -9,6 +9,7 @@ const { randomUUID } = require('crypto');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
+// Express modules 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
@@ -40,12 +41,6 @@ app.post('/api/notes', (req, res) => {
         res.status(500).json('Note unable to be saved :-( Try adding a title or some text!')
     }
 })
-
-// DELETE 
-app.delete('/api/notes/:id', (req, res) => {
-
-})
-
 
 // HTML routes - Return relevant HTML pages to client
 app.get('/notes', (req, res) => {
