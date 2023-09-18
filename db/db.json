@@ -1,6 +1,7 @@
 [
     {
         "title":"Hello world!",
-        "text":"I'm an example note~"
+        "text":"I'm an example note~",
+        "id": 1
     }
 ]
